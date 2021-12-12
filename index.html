@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <!-- Container -->
+  <div class="container noselect">
+    <!-- left container -->
+    <div class="left">
+      <!-- Label for Bill amount -->
+
+      <h3 class="label_input">Bill</h3>
+      <div class="input-group">
+
+        <!-- input field for bill amount -->
+        <div class="input-group-area">
+         <input id="billamt" type="text" placeholder="Bill Amount" value="00.00">
+     </div>
+  </div>
+
+        <!-- Label for tip percentage -->
+
+      <h3 class="label_input">Tip %</h3>
+      <div class="input-group">
+        <div class="input-group-icon " id='tip_decrement'>-</div>
+        <div class="input-group-area">
+        <input type="text" id="tip_percentage" name="tip_percentage"></div>
+        <div class="input-group-icon" id='tip_increment'>+</div>
+   </div>
+
+          <!-- Label for number of people -->
+      <h3 class="label_input">Number of people</h3>
+
+      <div class="input-group">
+        <div class="input-group-icon" id='people_decrement'>-</div>
+        <div class="input-group-area">
+          <input type="text" id="number_of_people" name="number_of_people">
+          </div>
+      <div class="input-group-icon" id='people_increment'>+</div>
+      </div>
+    </div>
+
+<!-- right container -->
+
+    <div class="right">
+      <div class='row'>
+        <div class='left_tip'>
+
+          <h3>Tip</h3>
+          <span class="per_person">per person</span>
+        </div>
+        <div class="right_tip inline">
+          <span class='dollar'>$</span>
+          <h2 id='tip'>0.00</h2>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='left_total'>
+          <!-- Total amount heading -->
+          <h3>Total</h3>
+          <span class="per_person">per person</span>
+        </div>
+        <div class="right_total inline">
+          <span class='dollar'>$</span>
+          <h2 id='total'>0.00</h2>
+             </div>
+           </div>
+         </div>
+       </div>
+,     </div>
+
+    <script type="text/javascript" src="script.js"> </script>
+
+  </head>
+</body>
+
+</html>

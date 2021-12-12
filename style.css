@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  font: 14px/1.4 arial, sans-serif;
+}
+
+
+/* container section  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 70%;
+  border: 2px solid rgb(224, 223, 223);
+  border-radius: 0.5rem;
+  margin: 150px;
+}
+
+/* left container */
+
+.left {
+  border: 1px solid #fff;
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  border-right: 2px solid rgb(224, 223, 223);
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  font: sans-serif;
+  text-align: center;
+  font-size: 33px;
+
+}
+.input-group  {
+border: 1px solid #ddd;
+}
+
+    /* buttons increment & decrement */
+
+.input-group-icon {
+  background: #eee;
+  color: #777;
+  padding: 0 14px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top:6px ;
+  transition: all 0.2s ease;
+
+}
+.input-group-icon:hover{
+      transform:scale(1.1);
+}
+
+
+.input-group-area {
+  width: 100%;
+}
+.input-group input {
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 4px;
+  height: 3rem;
+}
+
+
+input:focus {
+  outline: 0;
+}
+
+input {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.label_input{
+  color: #777;
+  padding-top:20px;
+
+}
+    /* right container */
+
+.right {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+}
+
+.row {
+  display: flex;
+  padding: 16px 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row h3 {
+  color: #000;
+  font-weight: 100;
+  margin: 0;
+  font-size: 30px;
+}
+/* per person text  */
+
+.row .per_person {
+color: #777;
+
+}
+
+/* total tip */
+
+#total {
+  font-size: 2.3em;
+}
+
+.right_total .dollar {
+  font-size: 2.2em;
+}
+
+.dollar {
+  font-size: 1.9em;
+}
+
+#tip {
+  font-weight: 100;
+  font-size: 1.9em;
+}
+
+
+/* media query for responsive design - mobile */
+
+@media screen and (max-width: 600px) {
+  body{
+padding-bottom: 220px;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .input-group {
+    width: 60%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(224, 223, 223);
+    /* border:none; */
+    overflow: hidden;
+  }
+  .right {
+  display: flex;
+    width: 100%;
+    height: 89%;
+    border: 2px solid rgb(224, 223, 223);
+
+  }
+  #total {
+    font-size: 1.8em;
+  }
+
+  .right_total .dollar {
+    font-size: 1.7em;
+  }
+
+  .dollar {
+    font-size: 1.5em;
+  }
+
+  #tip {
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+}
+
+
+/* media query for tablet/ipad */
+
+@media screen and (width: 810px){
+  .left{
+    width: 100%;
+    justify-content: center;
+  }
+  .right{
+    width: 50%;
+    height: 80%;
+  }
+  #total {
+    font-size: 1.1em;
+  }
+
+  .right_total .dollar {
+    font-size: 1em;
+  }
+
+  .dollar {
+    font-size: 0.9em;
+  }
+
+  #tip {
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+
+}
+/* Select disabled */
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
