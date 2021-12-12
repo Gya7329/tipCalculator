@@ -1,3 +1,9 @@
 # tipCalculator
-Tip Calculator using Js
-![alt text](https://drive.google.com/file/d/1VTOQhwIaPSS0vgQjl1zi8zv9NulIXNmt/view)
+
+Tip Calculator for All browser .
+Submitted by: Gyasuddin Ansari
+
+The following **required** functionality is complete:
+
+* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+
