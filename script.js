@@ -64,6 +64,13 @@ class Counter {
 
         return;
       }
+      
+       // % filled in tip percentage field
+      if (String(this.value).includes("%")) {
+        this.setValue(Number(this.value.replace("%", "")))
+        return;
+      }
+
 
       // checking if input is number
       if (isNumber(this.value)) {
@@ -73,12 +80,7 @@ class Counter {
       }
         return;
       }
-      // % filled in tip percentage field
-      if ((this.value).includes("%")) {
-        this.setValue(Number(this.value.replace("%", "")))
-        return;
-      }
-
+    
       // error message if input is not number and set value to 1 in people field
       this.setValue(1);
       throw Error("Invalid value");
