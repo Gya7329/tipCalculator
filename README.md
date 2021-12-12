@@ -5,5 +5,5 @@ Submitted by: Gyasuddin Ansari
 
 The following **required** functionality is complete:
 
-* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [X] User can enter a bill amount, enter tip percentage, and see the tip and total values per person.
 
